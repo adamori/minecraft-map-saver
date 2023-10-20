@@ -1,0 +1,20 @@
+main: ${PACKAGE}.${NAME}
+name: ${NAME}
+version: "${VERSION}"
+api-version: "1.16"
+author: Adam Alidibirov
+description: Adds command to export blocks with locations to csv file
+commands:
+  savemap:
+    description: Base command for EXAMPLE
+    usage: "/savemap <startX> <startY> <startZ> <endX> <endY> <endZ> <worldName> <bufferSize:4096>"
+    aliases: mapsaver
+permissions:
+  savemap.test:
+    description: DESCRIPTION
+    default: true
+  savemap.*:
+    description: Grants all other permissions
+    default: false
+    children:
+      savemap.test: true
