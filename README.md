@@ -1,4 +1,4 @@
-# PaperMC/Spigot Minecraft Server Plugin Template
+# MapSaver PaperMC/Spigot Minecraft Server Plugin
 
 The Minecraft Server-side plugin adds a `savemap` command to export all blocks into a CSV file based on a specified range of locations.
 
